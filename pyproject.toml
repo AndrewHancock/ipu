@@ -5,8 +5,16 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[project.scripts]
+ipu = "ipu:ipu"
+
+
 [project]
-name = "Investment Planning Utility"
+name = "investment_planning_utility"
 version = "0.0.1"
 description = "Utilities for collecting and analyzing historical stock prices."
 authors = [{name = "Andrew Hancock", email = "andrewneilhancock@gmail.com"}]
+dependencies = [
+    "yfinance",
+    "polars",
+    "click"]
