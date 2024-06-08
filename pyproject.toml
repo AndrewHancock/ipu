@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "Investment Planning Utility"
+version = "0.0.1"
+description = "Utilities for collecting and analyzing historical stock prices."
+authors = [{name = "Andrew Hancock", email = "andrewneilhancock@gmail.com"}]
